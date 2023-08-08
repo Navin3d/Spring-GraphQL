@@ -42,7 +42,8 @@ query {
 }
 
 
-repository {
+```
+      repository {
           commitConnection(first: 10) {   # You can adjust the 'first' parameter as needed
             nodes {
               message
@@ -55,5 +56,6 @@ repository {
             }
           }
         }
+```
 
         
