@@ -40,3 +40,20 @@ query {
     }
   }
 }
+
+
+repository {
+          commitConnection(first: 10) {   # You can adjust the 'first' parameter as needed
+            nodes {
+              message
+              oid
+              author {
+                name
+                email
+                date
+              }
+            }
+          }
+        }
+
+        
