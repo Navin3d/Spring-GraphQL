@@ -56,6 +56,25 @@ query {
             }
           }
         }
+
+projects(includeSubgroups: true, first: 3, after: "MjU=") {
+      edges {
+        cursor
+        node {
+          id
+          fullPath
+          statistics {
+            commitCount
+            storageSize
+            repositorySize
+            lfsObjectsSize
+            buildArtifactsSize
+            packagesSize
+          }
+        }
+      }
+}
+
 ```
 
         
