@@ -1,6 +1,7 @@
 # Spring-GraphQL
 This is an simple spring poc using graphql.
 
+```
 query {
   user(username: "username") {
     contributionsCollection(from: "2023-01-01T00:00:00Z", to: "2023-08-01T00:00:00Z") {
@@ -40,7 +41,7 @@ query {
     }
   }
 }
-
+```
 
 ```
       repository {
@@ -77,4 +78,16 @@ projects(includeSubgroups: true, first: 3, after: "MjU=") {
 
 ```
 
+```
+function getCurrentDate() {
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+  const day = String(today.getDate()).padStart(2, '0');
+
+  return `${year}-${month}-${day}`;
+}
+
+const formattedDate = getCurrentDate();
+```
         
