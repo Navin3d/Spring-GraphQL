@@ -100,4 +100,19 @@ newDate.setDate(initialDate.getDate() + numberOfDaysToAdd);
 // Output the new date
 console.log(newDate.toDateString());
 ```
+
+```
+// Create Date objects for the two dates
+var date1 = new Date('2023-08-10'); // Format: YYYY-MM-DD
+var date2 = new Date('2023-08-15'); // Format: YYYY-MM-DD
+
+// Calculate the time difference in milliseconds
+var timeDiff = date2.getTime() - date1.getTime();
+
+// Convert milliseconds to days
+var daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+// Output the difference in days
+console.log('Difference in days:', daysDiff);
+```
         
