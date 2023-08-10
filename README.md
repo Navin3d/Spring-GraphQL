@@ -89,5 +89,15 @@ function getCurrentDate() {
 }
 
 const formattedDate = getCurrentDate();
+
+var initialDate = new Date('2023-08-10'); // Format: YYYY-MM-DD
+
+// Add 5 days to the initial date
+var numberOfDaysToAdd = 5;
+var newDate = new Date(initialDate);
+newDate.setDate(initialDate.getDate() + numberOfDaysToAdd);
+
+// Output the new date
+console.log(newDate.toDateString());
 ```
         
