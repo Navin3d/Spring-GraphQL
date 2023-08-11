@@ -115,4 +115,16 @@ var daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 // Output the difference in days
 console.log('Difference in days:', daysDiff);
 ```
-        
+```
+const inputString = "example-data - This is some content";
+
+const regex = /-(\w+)\s/;
+const match = regex.exec(inputString);
+
+if (match) {
+  const capturedData = match[1];
+  console.log(capturedData);
+} else {
+  console.log("No match found.");
+}
+```     
