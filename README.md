@@ -1,6 +1,8 @@
 # Spring-GraphQL
 This is an simple spring poc using graphql.
 
+ssh-keygen -t rsa -b 4096
+
 ```
 query {
   user(username: "username") {
