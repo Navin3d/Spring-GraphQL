@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "9c0ece08-2a00-4ce5-bbe4-4814845cb852",
+		"name": "Spring-Boot-GraphQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17195439"
+	},
+	"item": [
+		{
+			"name": "GET GraphQl Servers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query{\n    servers {\n        id,\n        host,\n        name,\n        port,\n        utiliZations {\n            id,\n            ramUsed,\n            ramFree,\n            cpuUsed,\n            capturedAt\n        },\n    }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

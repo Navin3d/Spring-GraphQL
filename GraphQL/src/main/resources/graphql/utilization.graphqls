@@ -1,0 +1,7 @@
+type Utilization {
+	id: String
+    ramUsed: Int
+    ramFree: Int
+    cpuUsed: Int
+    capturedAt: String
+}

@@ -1,0 +1,12 @@
+type Query {
+	servers: [Server]
+	server(uniqueId: ID): Server
+}
+
+type Server {
+	id: String
+	name: String
+	host: String
+	port: String
+	utiliZations: [Utilization]
+}
